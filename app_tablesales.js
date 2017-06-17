@@ -38,7 +38,7 @@ function makeRows(){
     var currentStore = storesArray[s];
 var  firstRow = document.getElementById([s]);
 
-for (var i = 0; i < currentStore.results.length - 1; i++) {
+for (var i = 0; i < currentStore.results.length; i++) {
   var resultData = document.createElement('td');
   resultData.textContent = currentStore.results[i];
   firstRow.appendChild(resultData);
