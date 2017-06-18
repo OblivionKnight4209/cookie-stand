@@ -1,0 +1,8 @@
+table{
+  text-align: center;
+  border: black, 10px;
+  background-color: grey;
+}
+th{
+  border: black solid 2px;
+}

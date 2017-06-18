@@ -1,0 +1,13 @@
+table{
+  border: black, 10px;
+  background-color: grey;
+}
+h1{
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+}
+body{
+  background-color:  blue;
+
+}
