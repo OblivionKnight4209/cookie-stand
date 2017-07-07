@@ -6,8 +6,28 @@ h1{
   font-size: 20px;
   text-align: center;
   font-style: italic;
+  background-color: white;
+
+}
+p{
+  background-color: white;
+}
+h2{
+  background-color: white;
 }
 body{
   background-color:  blue;
 
+}
+div.topnav{
+  background-color: black;
+  color: white;
+  font-style: oblique;
+}
+a{
+  color: white;
+}
+div.storeHours{
+  background-color: white;
+  align-items: right;
 }

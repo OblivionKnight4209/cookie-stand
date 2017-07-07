@@ -7,6 +7,7 @@ function StoreInfo(minPrice, maxPrice, Avg){
   this.hourlySales = 0;
   this.results = [];
   this.totalSales = 0;
+  this.totalCookiesPerHour = 0;
 }
 StoreInfo.prototype.randomNum = function () {
   return Math.floor(Math.random()*((this.maxPrice + 1)- this.minPrice) + this.minPrice);
@@ -47,10 +48,14 @@ var totalData = document.createElement('td');
 totalData.textContent = currentStore.totalSales;
 firstRow.appendChild(totalData);
 }
+// finalTotal += totalData;
+// return totalData;
 }
+//Making a new row to add all the totals for each store for every hour.
 
 
 makeRows();
+
 
 
 
