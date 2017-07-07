@@ -8,7 +8,7 @@ th{
 
 }
 body{
-  background-color: #FCD573;
+  background-color: blue;
 }
 #totals{
   background-color: grey;
@@ -18,9 +18,14 @@ tr{
 }
 div{
   background-position: left;
-  background-color: green;
+  background-color: black;
   font-size: 25px;
   font-family: fantasy;
+  color: white;
+}
+a{
+  color: white;
+  text-align:center;
 }
 h1{
   border: black;
