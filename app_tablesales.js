@@ -1,6 +1,6 @@
 'use strict';
 
-function StoreInfo(minPrice, maxPrice, Avg){
+function StoreInfo(minPrice, maxPrice, Avg) {
   this.minPrice = minPrice;
   this.maxPrice = maxPrice;
   this.Avg  = Avg;
@@ -10,7 +10,6 @@ function StoreInfo(minPrice, maxPrice, Avg){
 }
 StoreInfo.prototype.randomNum = function () {
   return Math.floor(Math.random()*((this.maxPrice + 1)- this.minPrice) + this.minPrice);
-
 };
 
 var firstInPike = new StoreInfo (23,65,6.3);
@@ -33,66 +32,19 @@ for (var s = 0; s < storesArray.length; s++) {
   }
 }
 //writes to  the html
-function makeRows(){
-  for (var s = 0; s < storesArray.length; s++){
+function makeRows() {
+  for (var s = 0; s < storesArray.length; s++) {
     var currentStore = storesArray[s];
-var  firstRow = document.getElementById([s]);
-
-for (var i = 0; i < currentStore.results.length; i++) {
-  var resultData = document.createElement('td');
-  resultData.textContent = currentStore.results[i];
-  firstRow.appendChild(resultData);
-}
-var totalData = document.createElement('td');
-totalData.textContent = currentStore.totalSales;
-firstRow.appendChild(totalData);
-}
-}
-
+    var  firstRow = document.getElementById([s]);
+  for (var i = 0; i < currentStore.results.length; i++) {
+    var resultData = document.createElement('td');
+    resultData.textContent = currentStore.results[i];
+    firstRow.appendChild(resultData);
+  };
+  var totalData = document.createElement('td');
+  totalData.textContent = currentStore.totalSales;
+  firstRow.appendChild(totalData);
+  };
+};
 
 makeRows();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Below is tested and fail and old code
-
-// function makeRow(item){
-// var  firstRow = document.getElementById('firstInPike');
-//
-// for (var i = 0; i < currentStore.length; i++) {
-//
-// }
-  //Step 1 -creat element
-  // var newRowEl = document.createElement('tr');
-  //
-  // //Step2 - Configure/Mutate the Row element
-  // var itemMinPriceEl = document.createElement('td');
-  // itemMinPriceEl.textContent = this.minPrice;
-  // newRowEl.appendChild(itemMinPriceEl);
-  //
-  // var itemMaxPriceEl = document.createElement('td');
-  // itemMaxPriceEl.textContent = this.maxPrice;
-  // newRowEl.appendChild(itemMaxPriceEl);
-  //
-  // var itemAvgEl = document.createElement('td');
-  // itemAvgEl.textContent = this.Avg;
-  // newRowEl.appendChild(itemAvgEl);
-  //
-  // //Stage-3 Append Element to form
-  // tableBodyEl.appendChild(newRowEl);
-// };
-//unneeded code.
-// var tableEl = document.getElementById('generated-table');
-// var tableBodyEl = document.createElement('tbody');
